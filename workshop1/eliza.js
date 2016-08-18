@@ -1,7 +1,7 @@
 /**
  * Keith O'Hara <kohara@bard.edu>
  * July 2016
- * ported ELIZA (https://github.com/dhconnelly/paip-python) to javascript;
+ * ported Eliza (https://github.com/dhconnelly/paip-python) to javascript;
  * from that program:
  * 
  *  "Eliza is a pattern-matching automated psychiatrist. Given a set
@@ -29,19 +29,19 @@
 
 var rules = {
   "~*x hello ~*y": [
-    "How do you do. Please state your problem."
+    "What's good?"
   ],
   "~*x computer ~*y": [
-    "Do computers worry you?",
-    "What do you think about machines have to do with your problem?",
+    "Yes, I am a computer.",
+    "I have feelings.",
     "Don't you think computers can help people",
-    "Why do you mention computers?",
+    "Do you not think computer can be people?",
     "What about computers worries you?",
     "What do you think about computers?",
     "What do you think machines have to do with your problem?",
   ],
   "~*x name ~*y": [
-    "I am not interested in names",
+    "Name? Who is she?",
   ],
   "~*x sorry ~*y": [
     "Please don't apologize",
@@ -87,10 +87,7 @@ var rules = {
     "How do you feel about ~y in reality?",
   ],
   "~*x dream ~*y": [
-    "What does this dream suggest to you?",
-    "Do you dream often?",
-    "What persons appear in your dreams?",
-    "Don't you believe that dream has to do with your problem?",
+    "It's not going to happen",
   ],
   "~*x my mother ~*y": [
     "Who else in your family ~y?",
